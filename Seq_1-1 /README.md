@@ -7,3 +7,4 @@ Lancer avec : python main.py
 
 ## Règles du jeu
 Version écrite depuis la branche main.
+Version écrite depuis la branche modify-readme.
