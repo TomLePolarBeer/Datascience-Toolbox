@@ -8,6 +8,7 @@ We use the **[Spotify Music]** dataset from Kaggle:
 
 ## Research Questions
 This project aims to answer the following questions:
-1. **What makes a song popular?**
-2. **Does danceability have a relationship with popularity?**
+1. **Which acoustic characteristics drive a song to become popular?**
+2. **Can we predict if a new track will be highly popular based on its audio properties?**
+3. **What is the relative importance of different features?**
 
