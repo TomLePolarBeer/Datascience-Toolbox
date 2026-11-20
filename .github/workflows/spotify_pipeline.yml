@@ -1,0 +1,30 @@
+name: Spotify Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  automation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Recuperer le repository
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Installer les dependances
+        run: |
+          pip install pandas numpy scikit-learn matplotlib seaborn
+
+      - name: Verifier les fichiers
+        run: |
+          ls
+          ls data
