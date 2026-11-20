@@ -3,7 +3,7 @@ This project is aimed at teaching the basics of several tools used for data scie
 
 ## Dataset
 We use the **[Spotify Music]** dataset from Kaggle:
-🔗 https://www.kaggle.com/code/ziadda47/spotify-tracks-eda
+🔗 https://www.kaggle.com/datasets/yashdev01/spotify-tracks-dataset
 
 
 ## Research Questions
