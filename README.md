@@ -8,7 +8,6 @@ We use the **[Spotify Music]** dataset from Kaggle:
 
 ## Research Questions
 This project aims to answer the following questions:
-1. **Which acoustic characteristics drive a song to become popular?**
-2. **Can we predict if a new track will be highly popular based on its audio properties?**
-3. **What is the relative importance of different features?**
+1. **Which musical characteristics are associated with higher song popularity?**
+2. **Which music genres perform best, and what distinguishes their songs?**
 
