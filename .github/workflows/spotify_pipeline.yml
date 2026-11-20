@@ -36,7 +36,7 @@ jobs:
           test -f data/ml_metrics.csv
           echo "Tous les fichiers ont ete generes avec succes."
 
-                - name: Sauvegarder les resultats
+      - name: Sauvegarder les resultats
         uses: actions/upload-artifact@v4
         with:
           name: spotify-pipeline-results
