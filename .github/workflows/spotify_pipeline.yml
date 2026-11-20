@@ -2,9 +2,9 @@ name: Spotify Pipeline
 
 on:
   push:
-    branches: [main]
+    branches: [main, automation]
   pull_request:
-    branches: [main]
+    branches: [main, automation]
   workflow_dispatch:
 
 jobs:
@@ -21,10 +21,17 @@ jobs:
           python-version: '3.11'
 
       - name: Installer les dependances
-        run: |
-          pip install pandas numpy scikit-learn matplotlib seaborn
+        run: pip install pandas scikit-learn
 
-      - name: Verifier les fichiers
+      - name: Nettoyer les donnees
+        run: python data_exam.py
+
+      - name: Entrainement du modele ML
+        run: python ml_popularity.py
+
+      - name: Verifier les fichiers generes
         run: |
-          ls
-          ls data
+          test -f data/spotify_clean.csv
+          test -f data/ml_feature_importance.csv
+          test -f data/ml_metrics.csv
+          echo "Tous les fichiers ont ete generes avec succes."
